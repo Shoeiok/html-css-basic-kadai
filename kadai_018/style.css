@@ -1,0 +1,78 @@
+/* 一番上の図形 */
+/* div要素に①上下に20pxの余白を入れて、画面の中央に配置します
+           ②中にあるp要素が中央揃えになるようにします。*/
+/* p要素　3つのp要素が横並びになるようにします。 */
+#top {
+    width: 800px;
+    background-color: #dcc9f4;
+    /* できなかった */
+    text-align: center;
+    margin: 20px;
+}
+
+.top-child {
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 20%;
+    background-color: #ffd9df;
+    /* できなかった */
+    display: inline-block;
+}
+
+/* 真ん中図形　
+①上下に20pxの余白を入れて、画面の中央に配置します
+（id名topのdiv要素とmarginの相殺が起こりますが、
+一番上の図形と一番下の図形との上下間隔が20pxになるようにすればOKです */
+#middle {
+    width: 800px;
+    height: 800px;
+
+    background-color: #ffd9df;
+    position: relative;
+    /* できなかった */
+    margin: 20px;
+}
+#middle-child01, #middle-child02, #middle-child03 {
+    width: 200px;
+    height: 200px;
+    background-color: #87ceeb;
+}
+#middle-child01 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+#middle-child02 {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+}
+#middle-child03 {
+    position: absolute;
+    top: 500px;
+    left: 500px;
+}
+
+
+/* 一番下の図形 */
+#bottom {
+    width: 800px;
+    height: 300px;
+    background-color: #87ceeb;
+    /* できなかった */
+    margin: 20px;
+}
+
+#bottom-child01, #bottom-child02, #bottom-child03 {
+    width: 400px;
+    height: 100px;
+    background-color: #e5dcf0;
+}
+#bottom-child02 {
+    position: relative;
+    left: 200px;
+}
+#bottom-child03 {
+    position: relative;
+    left: 400px;
+}
